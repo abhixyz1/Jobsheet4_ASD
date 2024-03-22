@@ -18,15 +18,29 @@ public class MainPangkat {
         }
 
         System.out.println("===================================================");
-        System.out.println("Hasil Pangkat dengan Brute Force");
-        for (int i = 0; i < elemen; i++) {
-            System.out.println("Nilai " + png[i].nilai + " pangkat " + png[i].pangkat + " adalah : " + png[i].pangkatBF());
+        System.out.println("Pilih Metode yang digunakan : ");
+        System.out.println("1. Brute Force");
+        System.out.println("2. Divide and Conquer");
+        System.out.print("Masukkan pilihan : ");
+        int pilihan = sc.nextInt();
+
+        switch (pilihan) {
+            case 1:
+                System.out.println("===================================================");
+                System.out.println("Hasil Pangkat dengan Brute Force");
+                for (int i = 0; i < elemen; i++) {
+                    System.out.println("Nilai " + png[i].nilai + " pangkat " + png[i].pangkat + " adalah : " + png[i].pangkatBF());
+                }
+                break;
+            case 2:
+                System.out.println("===================================================");
+                System.out.println("Hasil Pangkat dengan Divide and Conquer");
+                for (int i = 0; i < elemen; i++) {
+                    System.out.println("Nilai " + png[i].nilai + " pangkat " + png[i].pangkat + " adalah : " + png[i].pangkatDC());
+                }
+                break;
+            default:
+                System.out.println("Pilihan tidak tersedia");
         }
-        System.out.println("===================================================");
-        System.out.println("Hasil Pangkat dengan Divide and Conquer");
-        for (int i = 0; i < elemen; i++) {
-            System.out.println("Nilai " + png[i].nilai + " pangkat " + png[i].pangkat + " adalah : " + png[i].pangkatDC());
-        }
-        System.out.println("===================================================");
     }
 }
