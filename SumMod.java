@@ -6,7 +6,7 @@ public class SumMod {
     public double total; // deklarasi variabel total
 
     // constructor
-    Sum(int elemen) { // parameter elemen
+    SumMod(int elemen) { // parameter elemen
         // inisialisasi nilai elemen dan array keuntungan
         this.elemen = elemen;
         this.keuntungan = new double[elemen];
